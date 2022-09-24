@@ -1,0 +1,17 @@
+
+
+     <h1>HALAMAN INDEX </h1>
+        <h3>hallo <%= nama %> </h3>
+
+        <h4>Daftar mahasiswa </h4>
+        <% if (mahasiswa.length < 1) { %>
+         <p>data masih kosong</p>
+        <% } else {%>
+             <% mahasiswa.forEach(mhs => { %>
+            <ul>
+                <li><%= mhs.nama %> </li>
+                <li> <%= mhs.email %> </li>
+            </ul>
+        <% }) %>
+        <% } %> 
+        
