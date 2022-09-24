@@ -88,6 +88,15 @@ app.get('/contact', async (req,res) => {
         })
     });
 
+     //halaman form tambah data
+     app.get('/contact/add',(req,res) => {
+        res.render('add-contact',{
+            title:'Form Tambah Data Contact',
+            layout:'layouts/main-layout.ejs'
+
+        })
+    });
+
    //halaman detail contact
    app.get('/contact/:name', async (req,res) => {
     // res.send('halaman contack')
