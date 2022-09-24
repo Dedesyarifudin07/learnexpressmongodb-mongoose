@@ -7,7 +7,7 @@ mongoose.connect('mongodb://127.0.0.1:27017/Pelajar', {
 
 // const Contact = require('../model/contact');
 
-// // menambahkan 1 data
+// // menambahkan 1 data dengan cara manual
 // const contact1 = new Contact({
 //     name:'Ahmad syarifudin',
 //     nohp:'089675434d67',
