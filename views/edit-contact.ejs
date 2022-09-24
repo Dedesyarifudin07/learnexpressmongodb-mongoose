@@ -13,11 +13,12 @@
                   </div>
                   
             <% } %>
-            <form method="post" action="/contact/update">
-                <input type="hidden" name="oldNama" value="<%= contact.nama%>">
+            <form method="post" action="/contact?_method=PUT">
+              <input type="hidden" name="_id" value="<%= contact._id %>">
+                <input type="hidden" name="oldNama" value="<%= contact.name%>">
                 <div class="mb-3">
-                  <label for="nama" class="form-label">Nama</label>
-                  <input type="text" class="form-control" id="nama" name="nama" required value="<%=  contact.oldNama || contact.nama %>" />
+                  <label for="name" class="form-label">Nama</label>
+                  <input type="text" class="form-control" id="name" name="name" required value="<%=  contact.oldNama || contact.nama %>" />
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
